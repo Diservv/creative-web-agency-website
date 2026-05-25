@@ -6,17 +6,17 @@
         <!-- Left Content -->
         <div class="text-left">
           <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600" style="line-height: 1.25!important;">
-            We Create <span class="relative">
+            Criamos <span class="relative">
               <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
-                Digital
+                experiências
               </span>
               <span 
                 class="absolute left-0 -bottom-2 w-full h-2 bg-[#f9ff00] rounded-md"
               ></span>
-            </span> Experiences
+            </span> digitais
           </h1>
           <p class="text-xl text-gray-600 mb-8">
-            Transform your brand with cutting-edge web solutions that captivate and convert.
+            Transforme sua marca com soluções web de ponta que cativam e convertem.
           </p>
           <div class="flex gap-4">
             <!-- "Get Started" Button with #EBED9E Background -->
@@ -29,7 +29,7 @@
             <!-- "Our Work" Button with #5A58E9 Background -->
             <Button 
               @click="navigateToSection('portfolio')" 
-              label="Our Work" 
+              label="Projectos" 
               icon="pi pi-images" 
               class="p-button-rounded p-button-lg custom-our-work"
             />
@@ -52,7 +52,7 @@
         <!-- Services Section -->
         <section id="services" class="py-20 bg-white">
       <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+        <h2 class="text-3xl font-bold text-center mb-12">Nossos Serviços</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <ServiceCard v-for="service in services.slice(0, 3)" :key="service.title" v-bind="service" />
         </div>
@@ -67,7 +67,7 @@
     <!-- Portfolio Preview -->
     <section id="portfolio" class="py-20 bg-gray-50">
       <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center mb-12">Featured Projects</h2>
+        <h2 class="text-3xl font-bold text-center mb-12">Projectos em Destaque</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <ProjectCard v-for="project in projects.slice(0, 3)" :key="project.title" v-bind="project" />
         </div>
@@ -83,12 +83,12 @@
     <section id="about" class="py-20 bg-white">
       <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div>
-          <h2 class="text-3xl font-bold mb-6">Who We Are</h2>
+          <h2 class="text-3xl font-bold mb-6">Quem Somos</h2>
           <p class="text-gray-600 mb-8">
-            We're a team of passionate creators and innovators dedicated to transforming ideas into impactful digital solutions.
+            Somos uma equipe de criadores e inovadores apaixonados por transformar ideias em soluções digitais impactantes.
           </p>
           <router-link to="/about">
-            <Button label="Learn More" icon="pi pi-arrow-right" severity="secondary" class="p-button-rounded" />
+            <Button label="Saiba Mais" icon="pi pi-arrow-right" severity="secondary" class="p-button-rounded" />
           </router-link>
         </div>
         <div class="relative">
@@ -104,9 +104,9 @@
     <!-- CTA Section -->
     <section id="contact" class="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
       <div class="container mx-auto px-4 text-center">
-        <h2 class="text-4xl font-bold mb-6">Ready to Start Your Project?</h2>
+        <h2 class="text-4xl font-bold mb-6">Pronto para Iniciar Seu Projeto?</h2>
         <p class="text-xl mb-8 max-w-2xl mx-auto">
-          Let's create something amazing together. Get in touch with our team today.
+          Vamos criar algo incrível juntos. Entre em contato com nossa equipe hoje.
         </p>
         <router-link to="/contact">
           <Button label="Contact Us" icon="pi pi-send" class="p-button-rounded p-button-lg p-button-outlined" />

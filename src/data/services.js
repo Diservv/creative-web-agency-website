@@ -2,7 +2,7 @@ export const services = [
   {
     icon: 'pi pi-desktop',
     title: 'Web Design',
-    description: 'Create stunning, user-friendly websites that leave a lasting impression.',
+    description: 'Interfaces modernas, responsivas e focadas na experiência do usuário.',
     features: [
       'Responsive Design',
       'UI/UX Design',
@@ -13,7 +13,7 @@ export const services = [
   {
     icon: 'pi pi-code',
     title: 'Development',
-    description: 'Build robust web applications with cutting-edge technologies.',
+    description: 'Soluções digitais funcionais, rápidas e desenvolvidas sob medida.',
     features: [
       'Full-Stack Development',
       'Custom Solutions',
@@ -24,18 +24,18 @@ export const services = [
   {
     icon: 'pi pi-palette',
     title: 'Branding',
-    description: 'Develop a strong brand identity that resonates with your audience.',
+    description: 'Desenvolva uma identidade de marca forte que ressoe com seu público.',
     features: [
-      'Logo Design',
-      'Brand Guidelines',
-      'Visual Identity',
-      'Brand Strategy'
+      'Design de Logo',
+      'Diretrizes da Marca',
+      'Identidade Visual',
+      'Estratégia de Marca'
     ]
   },
   {
     icon: 'pi pi-chart-line',
     title: 'Digital Marketing',
-    description: 'Drive growth with data-driven digital marketing strategies.',
+    description: 'Estratégias digitais para aumentar alcance, autoridade e conversões.',
     features: [
       'SEO Optimization',
       'Content Marketing',
@@ -46,18 +46,18 @@ export const services = [
   {
     icon: 'pi pi-mobile',
     title: 'App Development',
-    description: 'Create powerful mobile applications for iOS and Android.',
+    description: 'Crie aplicativos móveis poderosos para iOS e Android.',
     features: [
-      'Native Development',
-      'Cross-Platform Apps',
+      'Desenvolvimento Nativo',
+      'Aplicativos Cross-Platform',
       'UI/UX Design',
-      'App Store Optimization'
+      'Otimização da Loja de Aplicativos'
     ]
   },
   {
     icon: 'pi pi-cloud',
     title: 'Cloud Solutions',
-    description: 'Leverage cloud technology to scale your business efficiently.',
+    description: 'Soluções em nuvem seguras, escaláveis e eficientes para otimizar processos digitais.',
     features: [
       'Cloud Migration',
       'AWS/Azure Services',

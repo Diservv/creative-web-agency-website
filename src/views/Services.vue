@@ -1,8 +1,8 @@
 <template>
   <main>
     <PageHeader
-      title="Our Services"
-      description="Comprehensive digital solutions tailored to your business needs"
+      title="Nossos serviços"
+      description="Soluções digitais abrangentes, personalizadas para as necessidades do seu negócio."
     />
     
     <section class="py-16 bg-white">

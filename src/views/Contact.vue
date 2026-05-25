@@ -1,8 +1,8 @@
 <template>
     <main>
       <PageHeader
-        title="Contact Us"
-        description="Get in touch with our team. We'd love to hear from you!"
+        title="Contate-nos"
+        description="Entre em contato com nossa equipe. Adoramos ouvir de você!"
       />
       
       <section class="py-16 bg-white">
@@ -10,18 +10,18 @@
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <!-- Contact Form -->
             <div class="bg-white p-8 rounded-2xl shadow-lg">
-              <h2 class="text-2xl font-bold mb-6">Send Us a Message</h2>
+              <h2 class="text-2xl font-bold mb-6">Envie-nos uma Mensagem</h2>
               <ContactForm />
             </div>
             
             <!-- Contact Information -->
             <div class="lg:pl-8">
-              <h2 class="text-2xl font-bold mb-6">Get in Touch</h2>
+              <h2 class="text-2xl font-bold mb-6">Entre em Contato</h2>
               <ContactInfo />
               
               <!-- Social Media Links -->
               <div class="mt-12">
-                <h3 class="font-semibold text-lg mb-4">Follow Us</h3>
+                <h3 class="font-semibold text-lg mb-4">Siga-nos</h3>
                 <div class="flex gap-4">
                   <a v-for="social in socialLinks" 
                      :key="social.icon"

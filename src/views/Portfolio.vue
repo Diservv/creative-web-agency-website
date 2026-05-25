@@ -1,8 +1,8 @@
 <template>
   <main>
     <PageHeader
-      title="Our Portfolio"
-      description="Explore our latest projects and success stories"
+      title="Nosso Portfólio"
+      description="Descubra nossos projetos mais recentes e histórias de sucesso."
     />
     
     <section class="py-16">
@@ -38,9 +38,9 @@ import ProjectCard from '@/components/portfolio/ProjectCard.vue';
 import { projects } from '@/data/projects';
 
 const stats = [
-  { value: '50+', label: 'Projects Delivered' },
+  { value: '10+', label: 'Projects Delivered' },
   { value: '98%', label: 'Client Satisfaction' },
-  { value: '12+', label: 'Industry Awards' },
+  { value: '2+', label: 'Industry Awards' },
   { value: '24/7', label: 'Support Available' }
 ];
 </script>

@@ -1,20 +1,20 @@
 <template>
   <main>
     <PageHeader
-      title="About Us"
-      description="We're a team of passionate creators and innovators"
+      title="Sobre nós"
+      description="Somos uma equipe de criadores e inovadores apaixonados"
     />
     
     <section class="py-16 bg-white">
       <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 class="text-3xl font-bold mb-6">Our Story</h2>
+            <h2 class="text-3xl font-bold mb-6">Nossa História</h2>
             <p class="text-gray-600 mb-4">
-              Founded in 2020, we've been at the forefront of digital innovation, helping businesses transform their online presence and achieve remarkable growth.
+              Fundada em 2024, estamos na vanguarda da inovação digital, ajudando empresas a transformar sua presença online e alcançar um crescimento notável.
             </p>
             <p class="text-gray-600 mb-6">
-              Our team combines creativity with technical expertise to deliver solutions that not only look great but drive real business results.
+              Nossa equipe combina criatividade com expertise técnica para entregar soluções que não apenas parecem excelentes, mas também impulsionam resultados reais para o negócio.
             </p>
             <div class="grid grid-cols-2 gap-8">
               <div v-for="stat in stats" :key="stat.label" class="text-center">
@@ -40,9 +40,9 @@
 import PageHeader from '@/components/shared/PageHeader.vue';
 
 const stats = [
-  { value: '100+', label: 'Projects Completed' },
-  { value: '50+', label: 'Happy Clients' },
-  { value: '15+', label: 'Team Members' },
-  { value: '4+', label: 'Years Experience' }
+  { value: '10+', label: 'Projects Completed' },
+  { value: '20+', label: 'Happy Clients' },
+  { value: '5+', label: 'Team Members' },
+  { value: '2+', label: 'Years Experience' }
 ];
 </script>
