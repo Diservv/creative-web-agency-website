@@ -1,37 +1,24 @@
 <template>
-  <Menubar :model="items" class="border-none shadow-sm backdrop-blur-sm fixed w-full z-50">
+  <Menubar :model="items" class="border-none shadow-md backdrop-blur-md fixed w-full z-50 bg-white/95">
     <template #start>
-      <router-link to="/" class="flex items-center gap-2 mr-4">
-        <span class="font-bold text-xl bg-black text-[#EBED9E] p-2 rounded transition-transform transform hover:scale-110">Creative</span>
-      </router-link>
+      <div class="flex items-center gap-3 pl-4">
+        <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+          <i class="pi pi-bolt text-white font-bold text-lg"></i>
+        </div>
+        <span class="font-bold text-lg bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">Creative</span>
+      </div>
     </template>
     <template #end>
-      <router-link to="/contact">
-        <Button label="Contact Us" icon="pi pi-send" class="p-button-rounded bg-[#4745C9] text-white p-3 hover:bg-[#3633A2] transition-all" />
-      </router-link>
+      <Button @click="scrollToSection('contact')" label="Contact Us" icon="pi pi-send" class="p-button-rounded p-button-sm bg-[#4745C9] text-white hover:bg-[#3633A2] transition-all mr-4" />
     </template>
   </Menubar>
 </template>
 
 <script setup>
-import { useRoute, useRouter } from 'vue-router';
-
-const route = useRoute();
-const router = useRouter();
-
-const handleNavigation = (id) => {
-  if (route.path === '/') {
-    // On homepage - scroll to section
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  } else {
-    // On other pages - navigate to homepage then scroll
-    router.push({
-      path: '/',
-      hash: `#${id}`
-    });
+const scrollToSection = (id) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
   }
 };
 
@@ -39,26 +26,26 @@ const items = [
   {
     label: 'Home',
     icon: 'pi pi-home',
-    command: () => router.push('/'),
-    class: 'relative after:content-[""] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-[#5A58E9] after:transition-all hover:after:w-full'
-  },
-  {
-    label: 'Services',
-    icon: 'pi pi-star',
-    command: () => route.path === '/' ? handleNavigation('services') : router.push('/services'),
-    class: 'relative after:content-[""] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-[#5A58E9] after:transition-all hover:after:w-full'
-  },
-  {
-    label: 'Portfolio',
-    icon: 'pi pi-images',
-    command: () => route.path === '/' ? handleNavigation('portfolio') : router.push('/portfolio'),
-    class: 'relative after:content-[""] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-[#5A58E9] after:transition-all hover:after:w-full'
+    command: () => window.scrollTo({ top: 0, behavior: 'smooth' }),
+    class: 'text-gray-700 font-medium hover:text-blue-600'
   },
   {
     label: 'About',
     icon: 'pi pi-users',
-    command: () => route.path === '/' ? handleNavigation('about') : router.push('/about'),
-    class: 'relative after:content-[""] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[3px] after:bg-[#5A58E9] after:transition-all hover:after:w-full'
+    command: () => scrollToSection('about'),
+    class: 'text-gray-700 font-medium hover:text-blue-600'
+  },
+  {
+    label: 'Services',
+    icon: 'pi pi-star',
+    command: () => scrollToSection('services'),
+    class: 'text-gray-700 font-medium hover:text-blue-600'
+  },
+  {
+    label: 'Portfolio',
+    icon: 'pi pi-images',
+    command: () => scrollToSection('portfolio'),
+    class: 'text-gray-700 font-medium hover:text-blue-600'
   }
 ];
 </script>

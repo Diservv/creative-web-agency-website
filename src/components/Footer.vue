@@ -14,16 +14,16 @@
           <h3 class="font-bold mb-4"  style="color: #EBED9E;">Services</h3>
           <ul class="space-y-2 text-gray-400">
             <li>
-              <router-link to="/services" class="hover:text-blue-400 transition-colors">Web Design</router-link>
+              <button @click="scrollToSection('services')" class="hover:text-blue-400 transition-colors cursor-pointer">Web Design</button>
             </li>
             <li>
-              <router-link to="/services" class="hover:text-blue-400 transition-colors">Development</router-link>
+              <button @click="scrollToSection('services')" class="hover:text-blue-400 transition-colors cursor-pointer">Development</button>
             </li>
             <li>
-              <router-link to="/services" class="hover:text-blue-400 transition-colors">Branding</router-link>
+              <button @click="scrollToSection('services')" class="hover:text-blue-400 transition-colors cursor-pointer">Branding</button>
             </li>
             <li>
-              <router-link to="/services" class="hover:text-blue-400 transition-colors">Digital Marketing</router-link>
+              <button @click="scrollToSection('services')" class="hover:text-blue-400 transition-colors cursor-pointer">Digital Marketing</button>
             </li>
           </ul>
         </div>
@@ -31,16 +31,16 @@
           <h3 class="font-bold mb-4"  style="color: #EBED9E;">Company</h3>
           <ul class="space-y-2 text-gray-400">
             <li>
-              <router-link to="/about" class="hover:text-blue-400 transition-colors">About Us</router-link>
+              <button @click="scrollToSection('about')" class="hover:text-blue-400 transition-colors cursor-pointer">About Us</button>
             </li>
             <li>
-              <router-link to="/portfolio" class="hover:text-blue-400 transition-colors">Portfolio</router-link>
+              <button @click="scrollToSection('portfolio')" class="hover:text-blue-400 transition-colors cursor-pointer">Portfolio</button>
             </li>
             <li>
-              <router-link to="/about#careers" class="hover:text-blue-400 transition-colors">Careers</router-link>
+              <button @click="scrollToSection('portfolio')" class="hover:text-blue-400 transition-colors cursor-pointer">Work</button>
             </li>
             <li>
-              <router-link to="/contact" class="hover:text-blue-400 transition-colors">Contact</router-link>
+              <button @click="scrollToSection('contact')" class="hover:text-blue-400 transition-colors cursor-pointer">Contact</button>
             </li>
           </ul>
         </div>
@@ -60,3 +60,12 @@
     </div>
   </footer>
 </template>
+
+<script setup>
+const scrollToSection = (id) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+</script>
